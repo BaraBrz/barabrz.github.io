@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <!--čeština-->
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bára Brzobohatá">
+
+    <!-- FONTY: DM Serif Display, League Spartan-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=League+Spartan:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- FONT: Send Flowers -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap" rel="stylesheet">
+    <!--GOOGLE FONTY-->
+
+    <!--JQuery JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!--Masonry a imagesLoaded JavaScript -->
+    <script src="/imagesLoaded.js"></script>
+    <script src="/masonry.js"></script>
+    <script defer src="/init_masonry.js"></script>
+
+    <!--layout a styl-->
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/../../../bigPage_longtext_layout_video.css">
+    <link rel="stylesheet" href="/PhotoSwipe/dist/photoswipe.css">
+
+    <link rel="icon" href="../../../images/favicon/favicon.ico">
+
+    <!--dark / light mode-->
+    <script defer src="../../../light-dark-theme.js"></script>
+
+    <!--Javascript  -->
+    <script>
+        $(function () {
+            $(".navbar").load("../../../navbar.html")
+        });
+
+        $(function () {
+            $(".footer").load("../../../footer.html")
+        });
+    </script>
+    <title>Ulquiorra</title>
+</head>
+
+<body>
+    <div class="container bg">
+        <div class="navbar"></div>
+        <div id="ContentLong">
+            <div class="textFrame">
+                <div class="nazevBlock">
+                    <h1 class="nazev bigPageHeading">Ulquiorra</h1>
+                    <h2 class="nazev bigPageSubheading">interaktivní PC&nbsp;plocha</h2>
+                    <span class="rok bigPageSubheading">2024</span>
+                </div>
+                <div class="textBlock">
+                    <p class="ptext">Součástí dvojdíla interaktivní PC&nbsp;plocha.<br>
+                        Můj volnočasový projekt, kdy jsem ze svého statického pozadí na ploše vytvořila pohyblivou,
+                        interaktivní postavu.
+                        Jmenuje se Ulquiorra, je mužského pohlaví, ale není to člověk.
+                        Je&nbsp;mou oblíbenou postavou z&nbsp;japonské mangy a&nbsp;anime Bleach.<br>
+                        Obrázek není vytvořen mnou, ale jedná se ilustraci ze hry Bleach:&nbsp;Brave&nbsp;Souls.<br>
+                        Sleduje&nbsp;kurzor myši, reaguje na kliknutí na hlavě a&nbsp;obličeji,
+                        dvojkliknutí a&nbsp;dlouhé kliknutí podle místa na těle. Dvojkliknutí&nbsp;mimo postavu
+                        způsobuje
+                        pohled na
+                        diváka, při&nbsp;dalším dvojkliknutí opět sledování myši.<br>
+                        Obě práce spojuje téma interaktivní plochy a společně tvoří kontrast mezi konkrétním a&nbsp;
+                        abstraktním, osobním a&nbsp;školním, plochou a&nbsp;hloubkou.<br>
+                    </p>
+                    <p class="ptext" style="color: gray;">Tuto pohyblivou plochu jsem původně neměla v&nbsp;plánu
+                        prezentovat v&nbsp;ateliéru. Vytvářela&nbsp;
+                        jsem ji ve
+                        svém volném čase úplně mimo školu. Při&nbsp;konzultacích mé práce do ateliéru již byla mým
+                        pozadím na
+                        ploše a&nbsp;vyučující zaujala. Na&nbsp;základě toho jsem se rozhodla ji zahrnout do své
+                        semestrální
+                        práce,
+                        jelikož spadá do mého tématu.<br><br> </p>
+                    <p class="ptext" style="color: gray;">Použité programy: Photoshop, Live2D&nbsp;Cubism, Unity
+                        a&nbsp;Visual&nbsp;Studio&nbsp;Code</p>
+                </div>
+            </div>
+
+
+            <div class="halfFrame">
+                <div id="Video">
+                        <iframe class="video"
+                            src="https://www.youtube-nocookie.com/embed/D5dSevNwLlE?&rel=0&loop=1&vq=hd1080&list=PLtYu6xJV36xXRUFm29p9zFfCTx7wit0I9"
+                            title="YouTube video player" frameborder="0"
+                            allow="autoplay; clipboard-write; encrypted-media; gyroscope; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div id="Gallery">
+                    <div class="grid">
+                        <div class="grid-sizer"></div>
+                        <div class="grid-item"><a href="img/1.webp" data-pswp-width="1300" data-pswp-height="702">
+                                <img src="img/1.webp"></a></div>
+
+                        <div class="grid-item"><a href="img/2.webp" data-pswp-width="1300" data-pswp-height="1182">
+                                <img src="img/2.webp"></a></div>
+
+                        <div class="grid-item"><a href="img/3.webp" data-pswp-width="1300" data-pswp-height="975">
+                                <img src="img/3.webp"></a></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+    <script type="module">
+        import PhotoSwipeLightbox from '/PhotoSwipe/dist/photoswipe-lightbox.esm.js';
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: "#Gallery",
+            children: 'a',
+            pswpModule: () => import('/PhotoSwipe/dist/photoswipe.esm.js')
+        });
+        lightbox.init();
+    </script>
+</body>
+
+</html>

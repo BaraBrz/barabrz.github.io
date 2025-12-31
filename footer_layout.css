@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  align-self: flex-end;
+  width: 100%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0.2rem 1rem;
+}
+
+#FooterShort {
+  display: none;
+}
+
+@media screen and (max-width: 1050px) {
+  #Footer {
+    display: none;
+  }
+
+ #FooterShort {
+    text-align: right;
+    display: flex;
+    align-items: flex-end;
+    gap: 0.2rem;
+  }
+
+  .bb{
+    display: flex;
+    flex-direction: column;
+  }
+}

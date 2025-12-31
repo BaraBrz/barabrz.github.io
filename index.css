@@ -1,0 +1,365 @@
+body {
+  font-size: 16px;
+  /* mobil font-size: 14px;*/
+}
+
+/* GOOGLE FONTY */
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.league-spartan-regular {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.send-flowers-regular {
+  font-family: "Send Flowers", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* GOOGLE FONTY */
+
+/* LIGHT MODE default */
+:root {
+  --color-text: rgba(19, 14, 1, 1);
+  --color-textonhover: rgba(255, 143, 206, 1); /* navbar on hover, fullscreen on hover (same as primary)*/
+  --color-textgallery: rgba(112, 0, 64, 1); /* gallery text */
+  --color-tinytext: rgb(169, 169, 169);
+  --color-background: rgba(255, 255, 255, 1);
+  --color-primary: rgba(255, 143, 206, 1); /* open navbar on mobile */
+  --color-secondary: rgba(209, 0, 115, 1); /* navbar on active */
+  --color-accent: rgba(112, 0, 64, 1); /* on hover/click nav mobile (same as text gallery)*/
+  --color-secondaccent: rgba(255, 143, 206, 1); /*gallery stroke */
+  --color-galleryoverlay: rgba(255, 143, 206, 0.9); /* gallery overlay */
+  --color-fullscreenoverlay: rgba(255, 255, 255, 0.9);
+  --border-size: 1.5px;
+}
+
+/* DARK MODE */
+[theme="dark"] {
+  --color-text: rgba(254, 249, 236, 1);
+  --color-textonhover: rgba(255, 143, 206, 1); /* navbar on hover, fullscreen on hover (same as accent)*/
+  --color-textgallery: rgba(254, 249, 236, 1); /* gallery text (same as text)*/
+  --color-tinytext: rgb(69, 69, 69);
+  --color-background: rgba(0, 0, 0, 1);
+  --color-primary: rgba(112, 0, 64, 1); /* open navbar on mobile */
+  --color-secondary: rgba(255, 46, 161, 1); /* navbar on active */
+  --color-accent: rgba(255, 143, 206, 1); /* on hover/click nav mobile */
+  --color-secondaccent: rgba(255, 203, 232, 1); /* gallery stroke */
+  --color-galleryoverlay: rgba(112, 0, 64, 0.9); /* gallery overlay */
+  --color-fullscreenoverlay: rgba(0, 0, 0, 0.9);
+}
+
+/* links */
+#Jmeno:hover>* {
+  color: var(--color-text);
+}
+
+a:hover>* {
+  color: var(--color-textonhover);
+}
+
+a,
+a:visited,
+a * {
+  text-decoration: none;
+  color: var(--color-text);
+  transition: ease 0.5s color;
+}
+
+a.active * {
+  transition: 0s all;
+  color: var(--color-secondary);
+}
+
+/* default resets */
+button {
+  all: unset;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  all: unset;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  all: unset;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  all: unset;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  /* aspect-ratio: 1; */
+}
+
+/* regular stuff */
+.bg {
+  background-color: var(--color-background);
+}
+
+.border {
+  border-style: solid;
+  border-color: var(--color-secondaccent);
+  border-width: var(--border-size);
+  border-radius: 1.7em;
+}
+
+/*DESKTOP STYLY containerů*/
+.container {
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  overflow: auto;
+  position: absolute;
+}
+
+#Content {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-grow: 2;
+  z-index: 2;
+  overflow: auto;
+  overflow-y: hidden;
+  position: relative;
+  padding: 0 3.75em 0 3.75em;
+}
+
+#ContentSoon {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  z-index: 2;
+  overflow: hidden;
+  position: relative;
+  padding: 0 3.75em 0 3.75em;
+}
+
+/* DESKTOP STYLY text*/
+.headerText {
+  font-size: 34px;
+  font-style: normal;
+  font-family: DM Serif Display;
+  font-weight: 400;
+  font-stretch: normal;
+  letter-spacing: 0em;
+  color: var(--color-text);
+}
+
+.galleryHeading {
+  font-size: 32px;
+  font-style: normal;
+  font-family: DM Serif Display;
+  font-weight: 400;
+  font-stretch: normal;
+  letter-spacing: 0em;
+  color: var(--color-textgallery);
+}
+
+.gallerySubheading {
+  font-size: 16px;
+  font-style: normal;
+  font-family: DM Serif Display;
+  font-weight: 400;
+  font-stretch: normal;
+  letter-spacing: 0em;
+  color: var(--color-textgallery);
+}
+
+.bigPageHeading {
+  font-size: 40px;
+  font-style: normal;
+  font-family: DM Serif Display;
+  font-weight: 400;
+  font-stretch: normal;
+  letter-spacing: 0em;
+  color: var(--color-text);
+}
+
+.bigPageSubheading {
+  font-size: 24px;
+  font-style: normal;
+  font-family: DM Serif Display;
+  font-weight: 400;
+  font-stretch: normal;
+  letter-spacing: 0em;
+  color: var(--color-text);
+}
+
+.bigPageSubheadingAlt {
+  font-size: 32px;
+  font-style: normal;
+  font-family: Send Flowers;
+  font-weight: 400;
+  font-stretch: normal;
+  letter-spacing: 0em;
+  color: var(--color-text);
+}
+
+.ptext {
+  font-size: 24px;
+  font-style: normal;
+  font-family: League Spartan;
+  font-weight: 400;
+  font-stretch: normal;
+  letter-spacing: 0em;
+  color: var(--color-text);
+}
+
+.tinytext {
+  font-size: 14px;
+  font-style: normal;
+  font-family: League Spartan;
+  font-weight: 400;
+  font-stretch: normal;
+  letter-spacing: 0em;
+  color: var(--color-tinytext);
+}
+
+/* MOBILNÍ STYLY text*/
+@media screen and (max-width: 1200px) {
+  a:hover>* {
+  color: var(--color-accent);
+  }
+}  
+
+@media screen and (min-width:700px) and (max-width:999.9px) {
+  
+  .m {
+    font-size: 23px;
+  }
+}
+
+@media screen and (min-width:1000px) and (max-width:1650px) {
+  
+  .m {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  /* .headerText {
+    font-size: 24px;
+    font-style: normal;
+    font-family: DM Serif Display;
+    font-weight: 400;
+    font-stretch: normal;
+    letter-spacing: 0em;
+    color: var(--color-text);
+  }
+
+  /*.headerTextalt {
+  font-size: 24px;
+  font-style: normal;
+  font-family: Send Flowers;
+  font-weight: 400;
+  font-stretch: normal;
+  letter-spacing: 0em;
+  }*/
+
+  /* .galleryHeading {
+    font-size: 22px;
+    font-style: normal;
+    font-family: DM Serif Display;
+    font-weight: 400;
+    font-stretch: normal;
+    letter-spacing: 0em;
+    color: var(--color-textgallery);
+  }
+
+  .gallerySubheading {
+    font-size: 15px;
+    font-style: normal;
+    font-family: DM Serif Display;
+    font-weight: 400;
+    font-stretch: normal;
+    letter-spacing: 0em;
+    color: var(--color-textgallery);
+  }
+
+  .bigPageHeading {
+    font-size: 27px;
+    font-style: normal;
+    font-family: DM Serif Display;
+    font-weight: 400;
+    font-stretch: normal;
+    letter-spacing: 0em;
+    color: var(--color-text);
+  }
+
+  .bigPageSubheading {
+    font-size: 15px;
+    font-style: normal;
+    font-family: DM Serif Display;
+    font-weight: 400;
+    font-stretch: normal;
+    letter-spacing: 0em;
+    color: var(--color-text);
+  }
+
+  .bigPageSubheadingAlt {
+    font-size: 22px;
+    font-style: normal;
+    font-family: Send Flowers;
+    font-weight: 400;
+    font-stretch: normal;
+    letter-spacing: 0em;
+    color: var(--color-text);
+  }
+
+  .ptext {
+    font-size: 15px;
+    font-style: normal;
+    font-family: League Spartan;
+    font-weight: 400;
+    font-stretch: normal;
+    letter-spacing: 0em;
+    color: var(--color-text);
+  }
+
+  .tinytext {
+    font-size: 12px;
+    font-style: normal;
+    font-family: League Spartan;
+    font-weight: 400;
+    font-stretch: normal;
+    letter-spacing: 0em;
+    color: var(--color-tinytext);
+  } */
+
+  #Content {
+    padding: 0 2em 0 2em;
+    }
+}
+
+
+
+/*p, span, a, div {
+
+}*/

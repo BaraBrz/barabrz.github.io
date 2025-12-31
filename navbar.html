@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <!--čeština-->
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--layout a styl-->
+    <link rel="stylesheet" href="/navbar_layout.css">
+    <link rel="stylesheet" href="/index.css">
+
+    <!--Javascript-->
+    <script defer src="/navigation_mobile.js"></script>
+    <script defer src="/activePage.js"></script>
+    <script defer src="/button-handler.js"></script>
+    <script defer src="/light-dark-theme.js"></script>
+</head>
+
+<body>
+    <nav id="Navbar">
+        <div class="menuvlevo">
+            <img alt="logo" src="/images/logo-lm_desktop.webp" src-light="/images/logo-lm_desktop.webp"
+                src-dark="/images/logo-dm_desktop.webp" id="ThemeBtn" class="logo exchangeable" />
+
+            <div class="nav-item-s">
+                <a id="Jmeno" href="/">
+                    <span class="headerText">Bára&nbsp;Brzobohatá</span>
+                </a>
+            </div>
+        </div>
+
+
+        <div id="Menuvpravo">
+
+            <div class="nav-item">
+                <a class="nav-link" href="/me_prace/">
+                    <span class="headerText">Mé&nbsp;práce</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="/design/">
+                    <span class="headerText">Design</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="/ilustrace/">
+                    <span class="headerText">Ilustrace</span>
+                </a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link" href="/o_mne/">
+                    <span class="headerText">O&nbsp;mně</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="menumobile">
+            <img alt="logo" src="/images/logo-lm_desktop.webp" src-light="/images/logo-lm_desktop.webp"
+                src-dark="/images/logo-dm_desktop.webp" id="ThemeBtn2" class="logo exchangeable">
+
+            <div class="nav-item-s">
+                <a id="Jmeno" href="/">
+                    <span class="headerText">Bára&nbsp;Brzobohatá</span>
+                </a>
+            </div>
+
+                <div class="buttons">
+                <button class="menuicon"><img src="/images/menu-lm_24dp.svg" src-light="/images/menu-lm_24dp.svg"
+                    src-dark="/images/menu-dm_24dp.svg" id="MenuBtn" class="menu exchangeable"
+                    onclick="openSidebar()"></button>
+                <button class="menuopenicon"><img src="/images/menu_open-lm_24dp.svg"
+                    src-light="/images/menu_open-lm_24dp.svg" src-dark="/images/menu_open-dm_24dp.svg" id="MenuBtn2"
+                    class="menu exchangeable" onclick="closeSidebar()"></button>
+                </div>
+
+        </div>
+    </nav>
+
+</body>

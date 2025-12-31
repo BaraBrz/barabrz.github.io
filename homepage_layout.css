@@ -1,0 +1,54 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.mySakuraImage {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+.sakura {
+  transition: opacity 1.5s;
+  max-height: 100%;
+  /* bottom: 0; */
+  position: fixed;
+  justify-content: center;
+  z-index: inherit;
+}
+
+.sakura.anon:hover {
+  opacity: 0%;
+}
+
+@media screen and (max-width: 1680px) {
+
+  .mySakuraImage {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+  }
+
+  .sakura {
+    transition: opacity 1.5s;
+    max-height: 92%;
+    bottom: 0;
+    position: fixed;
+    z-index: inherit;
+  }
+
+  .sakura.anon:hover {
+    opacity: 0%;
+  }
+
+}

@@ -1,0 +1,25 @@
+.html,
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+#Content {
+    flex-direction: column;
+}
+
+.textCelek {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    gap: 1.25em;
+    margin-top: 2em;
+}
+
+.fishman {
+    padding: 1.25em 0 0 0;
+    max-width : 12.5em;
+    height: auto;
+}

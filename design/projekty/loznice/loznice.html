@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <!--čeština-->
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bára Brzobohatá">
+
+    <!-- FONTY: DM Serif Display, League Spartan-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=League+Spartan:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- FONT: Send Flowers -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap" rel="stylesheet">
+    <!--GOOGLE FONTY-->
+
+    <!--JQuery JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!--Masonry a imagesLoaded JavaScript -->
+    <script src="/imagesLoaded.js"></script>
+    <script src="/masonry.js"></script>
+    <script defer src="/init_masonry.js"></script>
+
+    <!--layout a styl-->
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/../../../bigPage_shorttext_layout.css">
+    <link rel="stylesheet" href="/PhotoSwipe/dist/photoswipe.css">
+
+    <link rel="icon" href="../../../images/favicon/favicon.ico">
+
+    <!--dark / light mode-->
+    <script defer src="../../../light-dark-theme.js"></script>
+
+    <!--Javascript  -->
+    <script>
+        $(function () {
+            $(".navbar").load("../../../navbar.html")
+        });
+
+        $(function () {
+            $(".footer").load("../../../footer.html")
+        });
+    </script>
+    <title>Ložnice</title>
+</head>
+
+<body>
+    <div class="container bg">
+        <div class="navbar"></div>
+        <div id="ContentShort">
+            <div class="textFrame">
+                <div class="nazevBlock">
+                    <h1 class="nazev bigPageHeading">Ložnice</h1>
+                    <h2 class="nazev bigPageSubheading">návrh&nbsp;interiéru</h2>
+                    <span class="rok bigPageSubheading">2021</span>
+                </div>
+                <div class="textBlock" style="text-align: center">
+                    <p class="ptext">Návrh interiéru&nbsp;ložnice do&nbsp;zadaného&nbsp;půdorysu.</p>
+                </div>
+            </div>
+            <div id="Gallery">
+                <div class="grid">
+                    <div class="grid-sizer"></div>
+                    <div class="grid-item"><a href="img/1.webp" data-pswp-width="1300" data-pswp-height="731">
+                            <img src="img/1.webp"></a></div>
+
+                    <div class="grid-item"><a href="img/2.webp" data-pswp-width="1300" data-pswp-height="731">
+                            <img src="img/2.webp"></a></div>
+
+                    <div class="grid-item"><a href="img/3.webp" data-pswp-width="1300" data-pswp-height="731">
+                            <img src="img/3.webp"></a></div>
+
+                    <div class="grid-item"><a href="img/12.webp" data-pswp-width="1300" data-pswp-height="919">
+                            <img src="img/12.webp"></a></div>
+
+                    <div class="grid-item"><a href="img/13.webp" data-pswp-width="1300" data-pswp-height="919">
+                            <img src="img/13.webp"></a></div>
+
+                    <div class="grid-item"><a href="img/14.webp" data-pswp-width="1300" data-pswp-height="919">
+                            <img src="img/14.webp"></a></div>
+
+                    <div class="grid-item"><a href="img/15.webp" data-pswp-width="1300" data-pswp-height="919">
+                            <img src="img/15.webp"></a></div>
+
+                    <div class="grid-item"><a href="img/16.webp" data-pswp-width="1300" data-pswp-height="919">
+                            <img src="img/16.webp"></a></div>
+
+                    <div class="grid-item"><a href="img/17.webp" data-pswp-width="1300" data-pswp-height="919">
+                            <img src="img/17.webp"></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+    <script type="module">
+        import PhotoSwipeLightbox from '/PhotoSwipe/dist/photoswipe-lightbox.esm.js';
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: "#Gallery",
+            children: 'a',
+            pswpModule: () => import('/PhotoSwipe/dist/photoswipe.esm.js')
+        });
+        lightbox.init();
+    </script>
+</body>
+
+</html>

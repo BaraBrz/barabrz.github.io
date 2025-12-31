@@ -1,0 +1,176 @@
+:root {
+  --gallery-gap-size: 0.625em;
+}
+
+.html,
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+#ContentLong {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  z-index: 2;
+  overflow: auto;
+  position: relative;
+  padding: 0 3.75em 0 3.75em;
+  overflow: hidden;
+}
+
+.textHalfFrame {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 0 1.25em 0 0;
+}
+
+.galleryHalfFrame {
+  width: 50%;
+  max-height: 100%;
+  position: relative;
+  top: 1.25em;
+  display: flex;
+  height: fit-content;
+  overflow: hidden;
+}
+
+#Gallery {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--gallery-gap-size);
+}
+
+#Gallery a:hover {
+  transform: scale(1.04);
+  transition: all ease-in-out 0.4s;
+}
+
+#Gallery a {
+  transition: all ease-in-out 0.4s;
+}
+
+.column {
+  flex-basis: calc(50% - 2 / 2 * var(--gallery-gap-size));
+  flex-direction: column;
+  /* max-width: calc(50% - var(--gallery-gap-size)); */
+  display: flex;
+  flex-grow: 0;
+  gap: var(--gallery-gap-size);
+}
+
+.imagecont {
+  position: relative;
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: fit-content;
+  display: flex;
+  justify-content: center;
+  max-height: auto;
+  overflow: hidden;
+  border-radius: 1.25em;
+}
+
+.nazevBlock {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  /* padding: 0 0 1.25em 0; */
+  margin-top: 1.25em;
+}
+
+.textBlock {
+  padding: 1.25em 4.0em 0 4.0em;
+}
+
+/* img { 
+  display: block;
+  max-width: 100%;
+  border-radius: 1.25em;
+} */
+
+@media screen and (max-width: 600px) {
+  #ContentLong {
+    flex-direction: column;
+    padding: 0 1.5em 0 1.5em;
+  }
+
+  .textHalfFrame {
+    width: 100%;
+    padding: 0;
+  }
+
+  .galleryHalfFrame {
+    width: 100%;
+  }
+
+  .textBlock {
+    padding: 2em 0.15em 0 0.15em;
+  }
+
+  .column {
+    flex-basis: 100%;
+    max-width: fit-content;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 899px) {
+  #ContentLong {
+    flex-direction: column;
+    padding: 0 1.5em 0 1.5em;
+  }
+
+  .textHalfFrame {
+    width: 100%;
+  }
+
+  .galleryHalfFrame {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1049px) {
+  .textBlock {
+    padding: 2em 5em 0 5em;
+  }
+
+  .textHalfFrame {
+    width: 100%;
+  }
+
+  .galleryHalfFrame {
+    width: 100%;
+  }
+
+  #ContentLong {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1050px) and (max-width: 1399px) {
+  .textBlock {
+    padding: 2em 10em 0 10em;
+  }
+
+  .textHalfFrame {
+    width: 100%;
+  }
+
+  .galleryHalfFrame {
+    width: 100%;
+  }
+
+  #ContentLong {
+    flex-direction: column;
+  }
+}

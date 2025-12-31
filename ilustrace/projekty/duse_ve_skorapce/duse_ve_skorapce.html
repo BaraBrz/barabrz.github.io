@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <!--čeština-->
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bára Brzobohatá">
+
+    <!-- FONTY: DM Serif Display, League Spartan-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=League+Spartan:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- FONT: Send Flowers -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap" rel="stylesheet">
+    <!--GOOGLE FONTY-->
+
+    <!--JQuery JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!--Masonry a imagesLoaded JavaScript -->
+    <script src="/imagesLoaded.js"></script>
+    <script src="/masonry.js"></script>
+    <script defer src="/init_masonry.js"></script>
+
+    <!--layout a styl-->
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/../../../bigPage_shorttext_layout.css">
+    <link rel="stylesheet" href="/PhotoSwipe/dist/photoswipe.css">
+
+    <link rel="icon" href="../../../images/favicon/favicon.ico">
+
+    <!--dark / light mode-->
+    <script defer src="../../../light-dark-theme.js"></script>
+
+    <!--Javascript  -->
+    <script>
+        $(function () {
+            $(".navbar").load("../../../navbar.html")
+        });
+
+        $(function () {
+            $(".footer").load("../../../footer.html")
+        });
+    </script>
+    <title>Duše ve skořápce</title>
+</head>
+
+<body>
+    <div class="container bg">
+        <div class="navbar"></div>
+        <div id="ContentShort">
+            <div class="textFrame">
+                <div class="nazevBlock">
+                    <h1 class="nazev bigPageHeading">Duše ve skořápce</h1>
+                    <h2 class="nazev bigPageSubheading">inspirace básní</h2>
+                    <span class="rok bigPageSubheading">2019</span>
+                </div>
+                <div class="textBlock">
+                    <p class="ptext">Inspirováno básní Skořápka z&nbsp;knihy Ovšem od&nbsp;Karla Kovy Kováře.<br>
+                        Nejprve vznikla
+                        jemná kresba tužkou na&nbsp;formát&nbsp;A4&nbsp;(210&nbsp;x&nbsp;297&nbsp;mm), kde je&nbsp;duše
+                        žloutkem ve&nbsp;skořápce. Poté&nbsp;vznikla realističtější varianta této kresby
+                        na&nbsp;formát&nbsp;A3&nbsp;(297&nbsp;x&nbsp;420&nbsp;mm). Z&nbsp;ní vychází kompozice
+                        pro&nbsp;linoryt, vyrytá&nbsp;matrice
+                        a&nbsp;výsledný otisk na&nbsp;papír.</p>
+                </div>
+            </div>
+            <div id="Gallery">
+                <div class="grid">
+                    <div class="grid-sizer"></div>
+                    <div class="grid-item"><a href="img/0.webp" data-pswp-width="804" data-pswp-height="1300">
+                            <img src="img/0.webp"></a></div>
+
+                    <div class="grid-item"><a href="img/1.webp" data-pswp-width="917" data-pswp-height="1300">
+                            <img src="img/1.webp"></a></div>
+
+                    <div class="grid-item"><a href="img/2.webp" data-pswp-width="1300" data-pswp-height="915">
+                            <img src="img/2.webp"></a></div>
+
+                    <div class="grid-item"><a href="img/6.webp" data-pswp-width="749" data-pswp-height="1300">
+                            <img src="img/6.webp"></a></div>
+
+                    <div class="grid-item"><a href="img/3.webp" data-pswp-width="904" data-pswp-height="1300">
+                            <img src="img/3.webp"></a></div>
+
+                    <div class="grid-item"><a href="img/4.webp" data-pswp-width="899" data-pswp-height="1300">
+                            <img src="img/4.webp"></a></div>
+
+                    <div class="grid-item"><a href="img/4-5.webp" data-pswp-width="757" data-pswp-height="1300">
+                            <img src="img/4-5.webp"></a></div>
+
+                    <div class="grid-item"><a href="img/5.webp" data-pswp-width="763" data-pswp-height="1300">
+                            <img src="img/5.webp"></a></div>
+
+                            <div class="grid-item"><a href="img/7.webp" data-pswp-width="1300" data-pswp-height="975">
+                            <img src="img/7.webp"></a></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+    <script type="module">
+        import PhotoSwipeLightbox from '/PhotoSwipe/dist/photoswipe-lightbox.esm.js';
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: "#Gallery",
+            children: 'a',
+            pswpModule: () => import('/PhotoSwipe/dist/photoswipe.esm.js')
+        });
+        lightbox.init();
+    </script>
+</body>
+
+</html>
