@@ -28,31 +28,44 @@ body {
 /* LIGHT MODE default */
 :root {
   --color-text: rgba(19, 14, 1, 1);
-  --color-textonhover: rgba(255, 143, 206, 1); /* navbar on hover, fullscreen on hover (same as primary)*/
-  --color-textgallery: rgba(112, 0, 64, 1); /* gallery text */
+  --color-textonhover: rgba(255, 143, 206, 1);
+  /* navbar on hover, fullscreen on hover (same as primary)*/
+  --color-textgallery: rgba(112, 0, 64, 1);
+  /* gallery text */
   --color-tinytext: rgb(169, 169, 169);
   --color-background: rgba(255, 255, 255, 1);
-  --color-primary: rgba(255, 143, 206, 1); /* open navbar on mobile */
-  --color-secondary: rgba(209, 0, 115, 1); /* navbar on active */
-  --color-accent: rgba(112, 0, 64, 1); /* on hover/click nav mobile (same as text gallery)*/
-  --color-secondaccent: rgba(255, 143, 206, 1); /*gallery stroke */
-  --color-galleryoverlay: rgba(255, 143, 206, 0.9); /* gallery overlay */
+  --color-primary: rgba(255, 143, 206, 1);
+  /* open navbar on mobile */
+  --color-secondary: rgba(209, 0, 115, 1);
+  /* navbar on active */
+  --color-accent: rgba(112, 0, 64, 1);
+  /* on hover/click nav mobile (same as text gallery)*/
+  --color-secondaccent: rgba(255, 143, 206, 1);
+  /*gallery stroke */
+  --color-galleryoverlay: rgba(255, 143, 206, 0.9);
+  /* gallery overlay */
   --color-fullscreenoverlay: rgba(255, 255, 255, 0.9);
-  --border-size: 1.5px;
 }
 
 /* DARK MODE */
 [theme="dark"] {
   --color-text: rgba(254, 249, 236, 1);
-  --color-textonhover: rgba(255, 143, 206, 1); /* navbar on hover, fullscreen on hover (same as accent)*/
-  --color-textgallery: rgba(254, 249, 236, 1); /* gallery text (same as text)*/
+  --color-textonhover: rgba(255, 143, 206, 1);
+  /* navbar on hover, fullscreen on hover (same as accent)*/
+  --color-textgallery: rgba(254, 249, 236, 1);
+  /* gallery text (same as text)*/
   --color-tinytext: rgb(69, 69, 69);
   --color-background: rgba(0, 0, 0, 1);
-  --color-primary: rgba(112, 0, 64, 1); /* open navbar on mobile */
-  --color-secondary: rgba(255, 46, 161, 1); /* navbar on active */
-  --color-accent: rgba(255, 143, 206, 1); /* on hover/click nav mobile */
-  --color-secondaccent: rgba(255, 203, 232, 1); /* gallery stroke */
-  --color-galleryoverlay: rgba(112, 0, 64, 0.9); /* gallery overlay */
+  --color-primary: rgba(112, 0, 64, 1);
+  /* open navbar on mobile */
+  --color-secondary: rgba(255, 46, 161, 1);
+  /* navbar on active */
+  --color-accent: rgba(255, 143, 206, 1);
+  /* on hover/click nav mobile */
+  --color-secondaccent: rgba(255, 203, 232, 1);
+  /* gallery stroke */
+  --color-galleryoverlay: rgba(112, 0, 64, 0.9);
+  /* gallery overlay */
   --color-fullscreenoverlay: rgba(0, 0, 0, 0.9);
 }
 
@@ -118,7 +131,7 @@ img {
 .border {
   border-style: solid;
   border-color: var(--color-secondaccent);
-  border-width: var(--border-size);
+  border-width: 1.5px;
   border-radius: 1.7em;
 }
 
@@ -244,19 +257,19 @@ img {
 /* MOBILNÍ STYLY text*/
 @media screen and (max-width: 1200px) {
   a:hover>* {
-  color: var(--color-accent);
+    color: var(--color-accent);
   }
-}  
+}
 
 @media screen and (min-width:700px) and (max-width:999.9px) {
-  
+
   .m {
     font-size: 23px;
   }
 }
 
 @media screen and (min-width:1000px) and (max-width:1650px) {
-  
+
   .m {
     font-size: 24px;
   }
@@ -274,16 +287,16 @@ img {
     color: var(--color-text);
   }
 
-  /*.headerTextalt {
+  .headerTextalt {
   font-size: 24px;
   font-style: normal;
   font-family: Send Flowers;
   font-weight: 400;
   font-stretch: normal;
   letter-spacing: 0em;
-  }*/
+  } */
 
-  /* .galleryHeading {
+  .galleryHeading {
     font-size: 22px;
     font-style: normal;
     font-family: DM Serif Display;
@@ -304,7 +317,7 @@ img {
   }
 
   .bigPageHeading {
-    font-size: 27px;
+    font-size: 28px;
     font-style: normal;
     font-family: DM Serif Display;
     font-weight: 400;
@@ -314,7 +327,7 @@ img {
   }
 
   .bigPageSubheading {
-    font-size: 15px;
+    font-size: 19px;
     font-style: normal;
     font-family: DM Serif Display;
     font-weight: 400;
@@ -324,7 +337,7 @@ img {
   }
 
   .bigPageSubheadingAlt {
-    font-size: 22px;
+    font-size: 19px;
     font-style: normal;
     font-family: Send Flowers;
     font-weight: 400;
@@ -334,7 +347,7 @@ img {
   }
 
   .ptext {
-    font-size: 15px;
+    font-size: 18px;
     font-style: normal;
     font-family: League Spartan;
     font-weight: 400;
@@ -351,13 +364,48 @@ img {
     font-stretch: normal;
     letter-spacing: 0em;
     color: var(--color-tinytext);
-  } */
+  }
 
   #Content {
     padding: 0 2em 0 2em;
-    }
+  }
 }
 
+@media screen and (max-width: 500px) {
+
+  .headerText {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 379px) {
+
+  .headerText {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 339px) {
+
+  .headerText {
+    font-size: 22px;
+  }
+}
+
+
+@media screen and (max-width: 299px) {
+
+  .headerText {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 270px) {
+
+  .headerText {
+    font-size: 18px;
+  }
+}
 
 
 /*p, span, a, div {

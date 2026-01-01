@@ -132,6 +132,7 @@
 
   .textHalfFrame {
     width: 100%;
+    padding: 0;
   }
 
   .galleryHalfFrame {
@@ -146,6 +147,7 @@
 
   .textHalfFrame {
     width: 100%;
+    padding: 0;
   }
 
   .galleryHalfFrame {
@@ -168,6 +170,7 @@
 
   .galleryHalfFrame {
     width: 100%;
+    padding: 0;
   }
 
   #ContentLong {
