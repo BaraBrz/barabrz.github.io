@@ -17,7 +17,7 @@ body {
     flex-wrap: nowrap;
     justify-content: center;
     overflow: auto;
-    position: absolute;
+    position: fixed;
 }
 
 .loader {
