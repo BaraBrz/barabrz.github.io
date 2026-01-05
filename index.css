@@ -133,7 +133,7 @@ img {
   border-style: solid;
   border-color: var(--color-secondaccent);
   border-width: 1.5px;
-  border-radius: 1.7em;
+  border-radius: 1.25em;
 }
 
 /*DESKTOP STYLY containerů*/
@@ -410,5 +410,6 @@ img {
 
 
 /*p, span, a, div {
+
 
 }*/
