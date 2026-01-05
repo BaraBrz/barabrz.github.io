@@ -119,7 +119,7 @@
 @media screen and (max-width: 600px) {
   #ContentLong {
     flex-direction: column;
-    padding: 0 1.5em 0 1.5em;
+    padding: 0 1em 0 1em;
   }
 
   .textFrame {
