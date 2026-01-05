@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <!--čeština-->
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--layout a styl-->
+    <link rel="stylesheet" href="/loader_layout.css">
+    <link rel="stylesheet" href="/index.css">
+
+    <!--Javascript-->
+     <script defer src="/light-dark-theme.js"></script>
+</head>     
+
+<body>
+    <div class="containerLoader bgL">
+        <img alt="loader" src="/images/logo.svg" class="logo loader" />
+    </div>
+
+    <script>
+        $(window).on("load", function(){
+            $(".containerLoader").fadeOut("slow");
+        });
+    </script>
+</body>
+</html>
