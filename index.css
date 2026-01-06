@@ -370,6 +370,11 @@ img {
   #Content {
     padding: 0 0.625em 0 0.625em;
   }
+
+  .border {
+    border-width: 1px;
+  }
+  
 }
 
 @media screen and (max-width: 500px) {
