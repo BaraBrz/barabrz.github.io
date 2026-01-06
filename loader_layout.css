@@ -10,23 +10,24 @@ body {
 }
 
 .containerLoader {
-    min-height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
+    align-items: center;
     overflow: auto;
     position: fixed;
     z-index: 10000;
 }
 
-.loader {
+.loaderlogo {
     position: absolute;
-    width: 6em;
-    height: 6em;
+    width: 5em;
+    height: 5em;
     align-self: center;
-    animation: enter 1s ease-in forwards, spin 2s ease-in-out 1s infinite forwards;
+    animation: enter 0.5s ease-in forwards, spin 1.4s ease-out 0.55s infinite forwards;
     z-index: 10000;
 }
 
@@ -35,15 +36,19 @@ body {
         scale: 0;
     }
 
+    75%{
+        scale: 0.9;
+    }
+
     100%{
-        scale: 1;
-        
+        scale: 0.99;
     }
 }
 
 @keyframes spin {
     0% {
-        transform: rotate(0);
+        scale: 1;
+        transform: rotate(5deg);
     }
 
     100% {

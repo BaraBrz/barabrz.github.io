@@ -2,62 +2,70 @@
 <html lang="cs">
 
 <head>
-    <!--čeština-->
-    <meta charset="UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Bára Brzobohatá">
+  <!--čeština-->
+  <meta charset="UTF-8">
 
-    <!-- FONTY: DM Serif Display, League Spartan-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
-    <!--GOOGLE FONTY-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Bára Brzobohatá">
 
-    <!--JQuery JavaScript -->
-    <script
-			  src="https://code.jquery.com/jquery-3.7.1.min.js"
-			  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-			  crossorigin="anonymous"></script> 
+  <!-- FONTY: DM Serif Display, League Spartan-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=League+Spartan:wght@100..900&display=swap"
+    rel="stylesheet">
+  <!--GOOGLE FONTY-->
 
-    <!--layout a styl-->
-    <link rel="stylesheet" href="/homepage_layout.css">
-    <link rel="stylesheet" href="/index.css">
+  <!--JQuery JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-    <title>Bára Brzobohatá</title>
-    <link rel="icon" href="/images/favicon/favicon.ico">
-    
-    
-    <!--dark / light mode-->
-    <script defer src="/light-dark-theme.js"></script>
+  <!--layout a styl-->
+  <link rel="stylesheet" href="/homepage_layout.css">
+  <link rel="stylesheet" href="/index.css">
 
-    <!--Javascript-->
-    <script>
-      $(function(){
-        $(".navbar").load("navbar.html")
-      });
+  <title>Bára Brzobohatá</title>
+  <link rel="icon" href="/images/favicon/favicon.ico">
 
-      $(function(){
-        $(".footer").load("footer.html")
-      });
 
-      $(function(){
-        $(".loader").load("loader.html")
-      });
-    </script>
-</head>   
+  <!--dark / light mode-->
+  <script defer src="/light-dark-theme.js"></script>
+
+  <!--Javascript-->
+  <script>
+    $(function () {
+      $(".navbar").load("navbar.html")
+    });
+
+    $(function () {
+      $(".footer").load("footer.html")
+    });
+
+    $(function () {
+      $(".loader").load("loader.html")
+    });
+  </script>
+</head>
 
 <body>
+  <div class="loader"></div>
   <div class="container bg">
     <div class="mySakuraImage">
-      <img src="/images/portret_me-lm_desktop.webp" src-light="/images/portret_me-lm_desktop.webp" src-dark="/images/portret_me-dm_desktop.webp" alt="Portrét já a sakury" class="sakura me exchangeable">
-      <img src="/images/portret_anon-lm_desktop.webp" src-light="/images/portret_anon-lm_desktop.webp" src-dark="/images/portret_anon-dm_desktop.webp" alt="Portrét sakury" class="sakura anon exchangeable">
+      <img src="/images/portret_me-lm_desktop.webp" src-light="/images/portret_me-lm_desktop.webp"
+        src-dark="/images/portret_me-dm_desktop.webp" alt="Portrét já a sakury" class="sakura me exchangeable">
+      <img src="/images/portret_anon-lm_desktop.webp" src-light="/images/portret_anon-lm_desktop.webp"
+        src-dark="/images/portret_anon-dm_desktop.webp" alt="Portrét sakury" class="sakura anon exchangeable">
     </div>
 
     <div class="navbar"></div>
     <div class="footer"></div>
-  </div>  
+  </div>
+
+  <script>
+    $(window).on("load", function () {
+      $(".loader").fadeOut("slow");
+    });
+  </script>
 </body>
 
 </html>
-
