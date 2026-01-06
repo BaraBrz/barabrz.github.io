@@ -44,7 +44,7 @@ body {
   /*gallery stroke */
   --color-galleryoverlay: rgba(255, 143, 206, 0.9);
   /* gallery overlay */
-  --color-fullscreenoverlay: rgba(255, 255, 255, 0.9);
+  --color-fullscreenoverlay: rgba(255, 255, 255);
 }
 
 /* DARK MODE */
@@ -66,7 +66,7 @@ body {
   /* gallery stroke */
   --color-galleryoverlay: rgba(112, 0, 64, 0.9);
   /* gallery overlay */
-  --color-fullscreenoverlay: rgba(0, 0, 0, 0.9);
+  --color-fullscreenoverlay: rgba(0, 0, 0);
 }
 
 /* links */
