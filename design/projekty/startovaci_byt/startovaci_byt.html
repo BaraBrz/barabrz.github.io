@@ -25,10 +25,6 @@
     <!--JQuery JavaScript -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!--Masonry a imagesLoaded JavaScript -->
-    <script src="/imagesLoaded.js"></script>
-    <script src="/masonry.js"></script>
-    <script defer src="/init_masonry.js"></script>
     <link rel="icon" href="../../../images/favicon/favicon.ico">
     <!--dark / light mode-->
     <script defer src="../../../light-dark-theme.js"></script>
@@ -45,10 +41,11 @@
     <title>Slaninové slečny</title>
 </head>
 
-<body> <div class="containerLoader bgL">
-    <img alt="loader" src="/images/logo.svg" src-light="/images/logo.svg" src-dark="/images/logo-dm.svg"
-      class="loaderlogo exchangeable" />
-  </div>
+<body>
+    <div class="containerLoader bgL">
+        <img alt="loader" src="/images/logo.svg" src-light="/images/logo.svg" src-dark="/images/logo-dm.svg"
+            class="loaderlogo exchangeable" />
+    </div>
     <div class="container bg">
         <div class="navbar"></div>
         <div id="ContentLong">
@@ -60,16 +57,22 @@
                 </div>
                 <div class="textBlock">
                     <p class="ptext">Navrhovala jsem startovací&nbsp;byt pro mladý&nbsp;pár bez dětí.
-                        Mým záměrem bylo co&nbsp;nejlépe rozvrhnout prostor, aby&nbsp;se&nbsp;do&nbsp;místností vešel potřebný nábytek a&nbsp;dalo
-                        se kolem něj pohodlně procházet, zároveň jsem chtěla mít dostatečně širokou chodbu, aby&nbsp;se v&nbsp;ní
+                        Mým záměrem bylo co&nbsp;nejlépe rozvrhnout prostor, aby&nbsp;se&nbsp;do&nbsp;místností vešel
+                        potřebný nábytek a&nbsp;dalo
+                        se kolem něj pohodlně procházet, zároveň jsem chtěla mít dostatečně širokou chodbu, aby&nbsp;se
+                        v&nbsp;ní
                         člověk necítil stísněně.<br>
-                        V&nbsp;bytě jsem chtěla mít alespoň jednu vestavěnou skříň, místo pro&nbsp;práci na&nbsp;počítači, a&nbsp;místo, kam
+                        V&nbsp;bytě jsem chtěla mít alespoň jednu vestavěnou skříň, místo pro&nbsp;práci
+                        na&nbsp;počítači, a&nbsp;místo, kam
                         by&nbsp;se dala schovat pračka.<br>
-                        Kuchyňskou linku spolu s&nbsp;úložným prostorem nad&nbsp;ní jsem pojala jako vestavěnou. Orámovala jsem&nbsp;ji úložným&nbsp;prostorem
+                        Kuchyňskou linku spolu s&nbsp;úložným prostorem nad&nbsp;ní jsem pojala jako vestavěnou.
+                        Orámovala jsem&nbsp;ji úložným&nbsp;prostorem
                         a&nbsp;proto jsem&nbsp;si mohla dovolit obklad až&nbsp;k&nbsp;výšce horních skříněk.<br>
-                        U&nbsp;nábytku jsem&nbsp;se snažila o&nbsp;oblé&nbsp;tvary a&nbsp;hrany a&nbsp;chtěla jsem, aby&nbsp;působil&nbsp;lehce. Úchytky&nbsp;jsem
+                        U&nbsp;nábytku jsem&nbsp;se snažila o&nbsp;oblé&nbsp;tvary a&nbsp;hrany a&nbsp;chtěla jsem,
+                        aby&nbsp;působil&nbsp;lehce. Úchytky&nbsp;jsem
                         chtěla mít jednoduché, umístěné tak, aby téměř nebyly vidět.
-                        V&nbsp;barevnosti jsem&nbsp;se inspirovala Vánocemi a&nbsp;celý&nbsp;byt ladila do&nbsp;červených, zelených, oranžových a&nbsp;hnědých&nbsp;tónů.
+                        V&nbsp;barevnosti jsem&nbsp;se inspirovala Vánocemi a&nbsp;celý&nbsp;byt ladila
+                        do&nbsp;červených, zelených, oranžových a&nbsp;hnědých&nbsp;tónů.
                     </p>
                 </div>
             </div>
@@ -123,6 +126,12 @@
         </div>
         <div class="footer"></div>
     </div>
+
+    <!--Masonry a imagesLoaded JavaScript -->
+    <script src="/imagesLoaded.js"></script>
+    <script src="/masonry.js"></script>
+    <script defer src="/init_masonry.js"></script>
+
     <script type="module">
         import PhotoSwipeLightbox from '/PhotoSwipe/dist/photoswipe-lightbox.esm.js';
         const lightbox = new PhotoSwipeLightbox({
@@ -132,11 +141,12 @@
         });
         lightbox.init();
     </script>
-<script>
-    $(window).on("load", function () {
-      $(".containerLoader").fadeOut("slow");
-    });
-  </script>
+
+    <script>
+        $(window).on("load", function () {
+            $(".containerLoader").fadeOut("slow");
+        });
+    </script>
 </body>
 
 </html>

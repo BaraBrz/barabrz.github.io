@@ -25,10 +25,6 @@
     <!--JQuery JavaScript -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!--Masonry a imagesLoaded JavaScript -->
-    <script src="/imagesLoaded.js"></script>
-    <script src="/masonry.js"></script>
-    <script defer src="/init_masonry.js"></script>
     <!--dark / light mode-->
     <script defer src="../../../light-dark-theme.js"></script>
     <!--Javascript  -->
@@ -44,10 +40,11 @@
     <title>Duše ve skořápce</title>
 </head>
 
-<body> <div class="containerLoader bgL">
-    <img alt="loader" src="/images/logo.svg" src-light="/images/logo.svg" src-dark="/images/logo-dm.svg"
-      class="loaderlogo exchangeable" />
-  </div>
+<body>
+    <div class="containerLoader bgL">
+        <img alt="loader" src="/images/logo.svg" src-light="/images/logo.svg" src-dark="/images/logo-dm.svg"
+            class="loaderlogo exchangeable" />
+    </div>
     <div class="container bg">
         <div class="navbar"></div>
         <div id="ContentShort">
@@ -94,7 +91,7 @@
                     <div class="grid-item"><a href="img/5.webp" data-pswp-width="763" data-pswp-height="1300">
                             <img src="img/5.webp"></a></div>
 
-                            <div class="grid-item"><a href="img/7.webp" data-pswp-width="1300" data-pswp-height="975">
+                    <div class="grid-item"><a href="img/7.webp" data-pswp-width="1300" data-pswp-height="975">
                             <img src="img/7.webp"></a></div>
 
                 </div>
@@ -102,6 +99,12 @@
         </div>
         <div class="footer"></div>
     </div>
+
+    <!--Masonry a imagesLoaded JavaScript -->
+    <script src="/imagesLoaded.js"></script>
+    <script src="/masonry.js"></script>
+    <script defer src="/init_masonry.js"></script>
+
     <script type="module">
         import PhotoSwipeLightbox from '/PhotoSwipe/dist/photoswipe-lightbox.esm.js';
         const lightbox = new PhotoSwipeLightbox({
@@ -111,11 +114,12 @@
         });
         lightbox.init();
     </script>
-<script>
-    $(window).on("load", function () {
-      $(".containerLoader").fadeOut("slow");
-    });
-  </script>
+
+    <script>
+        $(window).on("load", function () {
+            $(".containerLoader").fadeOut("slow");
+        });
+    </script>
 </body>
 
 </html>

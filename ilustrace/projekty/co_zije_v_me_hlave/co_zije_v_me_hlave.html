@@ -26,10 +26,6 @@
     <!--JQuery JavaScript -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!--Masonry a imagesLoaded JavaScript -->
-    <script src="/imagesLoaded.js"></script>
-    <script src="/masonry.js"></script>
-    <script defer src="/init_masonry.js"></script>
     <link rel="icon" href="../../../images/favicon/favicon.ico">
     <!--dark / light mode-->
     <script defer src="../../../light-dark-theme.js"></script>
@@ -46,10 +42,11 @@
     <title>Co žije v mé hlavě</title>
 </head>
 
-<body> <div class="containerLoader bgL">
-    <img alt="loader" src="/images/logo.svg" src-light="/images/logo.svg" src-dark="/images/logo-dm.svg"
-      class="loaderlogo exchangeable" />
-  </div>
+<body>
+    <div class="containerLoader bgL">
+        <img alt="loader" src="/images/logo.svg" src-light="/images/logo.svg" src-dark="/images/logo-dm.svg"
+            class="loaderlogo exchangeable" />
+    </div>
     <div class="container bg">
         <div class="navbar"></div>
         <div id="ContentShort">
@@ -60,8 +57,11 @@
                     <span class="rok bigPageSubheading">2021</span>
                 </div>
                 <div class="textBlock" style="text-align: center;">
-                    <p class="ptext">Kresba černým&nbsp;fixem a&nbsp;vodovými barvami na&nbsp;formát&nbsp;A4&nbsp;(210&nbsp;x&nbsp;297&nbsp;mm). Zobrazená&nbsp;postava nereprezentuje&nbsp;mě, název odkazuje k&nbsp;dílu jako celku.<br></p>
-                    <p class="ptext" style="color: gray;">Už když jsem byla malá, kreslila jsem z hlavy podobné změti věcí a zvířat.</p>
+                    <p class="ptext">Kresba černým&nbsp;fixem a&nbsp;vodovými barvami
+                        na&nbsp;formát&nbsp;A4&nbsp;(210&nbsp;x&nbsp;297&nbsp;mm). Zobrazená&nbsp;postava
+                        nereprezentuje&nbsp;mě, název odkazuje k&nbsp;dílu jako celku.<br></p>
+                    <p class="ptext" style="color: gray;">Už když jsem byla malá, kreslila jsem z hlavy podobné změti
+                        věcí a zvířat.</p>
                 </div>
             </div>
             <div id="Gallery" style="display: flex; justify-content: center;">
@@ -71,6 +71,12 @@
         </div>
         <div class="footer"></div>
     </div>
+
+    <!--Masonry a imagesLoaded JavaScript -->
+    <script src="/imagesLoaded.js"></script>
+    <script src="/masonry.js"></script>
+    <script defer src="/init_masonry.js"></script>
+
     <script type="module">
         import PhotoSwipeLightbox from '/PhotoSwipe/dist/photoswipe-lightbox.esm.js';
         const lightbox = new PhotoSwipeLightbox({
@@ -80,11 +86,12 @@
         });
         lightbox.init();
     </script>
-<script>
-    $(window).on("load", function () {
-      $(".containerLoader").fadeOut("slow");
-    });
-  </script>
+
+    <script>
+        $(window).on("load", function () {
+            $(".containerLoader").fadeOut("slow");
+        });
+    </script>
 </body>
 
 </html>

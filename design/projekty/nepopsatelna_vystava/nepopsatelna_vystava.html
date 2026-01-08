@@ -25,10 +25,6 @@
     <!--JQuery JavaScript -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!--Masonry a imagesLoaded JavaScript -->
-    <script src="/imagesLoaded.js"></script>
-    <script src="/masonry.js"></script>
-    <script defer src="/init_masonry.js"></script>
     <link rel="icon" href="../../../images/favicon/favicon.ico">
     <!--dark / light mode-->
     <script defer src="../../../light-dark-theme.js"></script>
@@ -45,10 +41,11 @@
     <title>Nepopsatelná výstava</title>
 </head>
 
-<body> <div class="containerLoader bgL">
-    <img alt="loader" src="/images/logo.svg" src-light="/images/logo.svg" src-dark="/images/logo-dm.svg"
-      class="loaderlogo exchangeable" />
-  </div>
+<body>
+    <div class="containerLoader bgL">
+        <img alt="loader" src="/images/logo.svg" src-light="/images/logo.svg" src-dark="/images/logo-dm.svg"
+            class="loaderlogo exchangeable" />
+    </div>
     <div class="container bg">
         <div class="navbar"></div>
         <div id="ContentShort">
@@ -59,7 +56,10 @@
                     <span class="rok bigPageSubheading">2020</span>
                 </div>
                 <div class="textBlock" style="text-align: center">
-                    <p class="ptext">Návrh názvu a&nbsp;plakátu ke&nbsp;studenstké výstavě v&nbsp;rámci Střední&nbsp;uměleckoprůmyslové&nbsp;školy hudebních&nbsp;nástrojů a&nbsp;nábytku v&nbsp;Hradci&nbsp;Králové. Použitá fotografie stoličky i&nbsp;abstraktní malba jsou z&nbsp;internetu. Formát&nbsp;A2 (420&nbsp;x&nbsp;594&nbsp;mm), 6&nbsp;variant.</p>
+                    <p class="ptext">Návrh názvu a&nbsp;plakátu ke&nbsp;studenstké výstavě v&nbsp;rámci
+                        Střední&nbsp;uměleckoprůmyslové&nbsp;školy hudebních&nbsp;nástrojů a&nbsp;nábytku
+                        v&nbsp;Hradci&nbsp;Králové. Použitá fotografie stoličky i&nbsp;abstraktní malba jsou
+                        z&nbsp;internetu. Formát&nbsp;A2 (420&nbsp;x&nbsp;594&nbsp;mm), 6&nbsp;variant.</p>
                 </div>
             </div>
             <div id="Gallery">
@@ -88,6 +88,12 @@
         </div>
         <div class="footer"></div>
     </div>
+
+    <!--Masonry a imagesLoaded JavaScript -->
+    <script src="/imagesLoaded.js"></script>
+    <script src="/masonry.js"></script>
+    <script defer src="/init_masonry.js"></script>
+
     <script type="module">
         import PhotoSwipeLightbox from '/PhotoSwipe/dist/photoswipe-lightbox.esm.js';
         const lightbox = new PhotoSwipeLightbox({
@@ -97,11 +103,12 @@
         });
         lightbox.init();
     </script>
-<script>
-    $(window).on("load", function () {
-      $(".containerLoader").fadeOut("slow");
-    });
-  </script>
+
+    <script>
+        $(window).on("load", function () {
+            $(".containerLoader").fadeOut("slow");
+        });
+    </script>
 </body>
 
 </html>

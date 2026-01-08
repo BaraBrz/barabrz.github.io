@@ -26,10 +26,6 @@
     <!--JQuery JavaScript -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!--Masonry a imagesLoaded JavaScript -->
-    <script src="/imagesLoaded.js"></script>
-    <script src="/masonry.js"></script>
-    <script defer src="/init_masonry.js"></script>
     <!--dark / light mode-->
     <script defer src="../../../light-dark-theme.js"></script>
     <!--Javascript  -->
@@ -45,10 +41,11 @@
     <title>Kompas</title>
 </head>
 
-<body> <div class="containerLoader bgL">
-    <img alt="loader" src="/images/logo.svg" src-light="/images/logo.svg" src-dark="/images/logo-dm.svg"
-      class="loaderlogo exchangeable" />
-  </div>
+<body>
+    <div class="containerLoader bgL">
+        <img alt="loader" src="/images/logo.svg" src-light="/images/logo.svg" src-dark="/images/logo-dm.svg"
+            class="loaderlogo exchangeable" />
+    </div>
     <div class="container bg">
         <div class="navbar"></div>
         <div id="ContentLong">
@@ -59,17 +56,22 @@
                     <span class="rok bigPageSubheading">2023</span>
                 </div>
                 <div class="textBlock">
-                    <p class="ptext">Pro svou instalaci jsem si vybrala kašnu, která se nachází v&nbsp;přesném středu nejen
+                    <p class="ptext">Pro svou instalaci jsem si vybrala kašnu, která se nachází v&nbsp;přesném středu
+                        nejen
                         terezínského náměstí, ale i&nbsp;celého města.
-                        Právě&nbsp;toto místo bylo výchozím bodem při vyměřování opevnění. Jelikož&nbsp;se jedná o&nbsp;takto klíčový
+                        Právě&nbsp;toto místo bylo výchozím bodem při vyměřování opevnění. Jelikož&nbsp;se jedná
+                        o&nbsp;takto klíčový
                         prostor, bylo mým záměrem
                         jeho důležitost podtrhnout zajímavým řešením současné kašny.<br>
-                        Jednalo&nbsp;by&nbsp;se o&nbsp;pohyblivou střelku upevněnou na trubce vodotrysku ve středu kašny, přesahující
+                        Jednalo&nbsp;by&nbsp;se o&nbsp;pohyblivou střelku upevněnou na trubce vodotrysku ve středu
+                        kašny, přesahující
                         její okraje.
                         Jednoduché&nbsp;provedení střelky má odkazovat na funkční povahu vojenského města.
-                        Ukazováním&nbsp;na sever odkazuje k&nbsp;faktu, že díky pevnostem Terezín a Josefov bylo téměř nemožné do
+                        Ukazováním&nbsp;na sever odkazuje k&nbsp;faktu, že díky pevnostem Terezín a Josefov bylo téměř
+                        nemožné do
                         Čech od severu útočit.
-                        Zároveň&nbsp;ukazuje na již minulé nebezpečí v&nbsp;podobě pruské armády, jíž mělo opevnění zkomplikovat další
+                        Zároveň&nbsp;ukazuje na již minulé nebezpečí v&nbsp;podobě pruské armády, jíž mělo opevnění
+                        zkomplikovat další
                         postup.
                     </p>
                 </div>
@@ -103,6 +105,12 @@
         </div>
         <div class="footer"></div>
     </div>
+
+    <!--Masonry a imagesLoaded JavaScript -->
+    <script src="/imagesLoaded.js"></script>
+    <script src="/masonry.js"></script>
+    <script defer src="/init_masonry.js"></script>
+
     <script type="module">
         import PhotoSwipeLightbox from '/PhotoSwipe/dist/photoswipe-lightbox.esm.js';
         const lightbox = new PhotoSwipeLightbox({
@@ -112,11 +120,12 @@
         });
         lightbox.init();
     </script>
-<script>
-    $(window).on("load", function () {
-      $(".containerLoader").fadeOut("slow");
-    });
-  </script>
+
+    <script>
+        $(window).on("load", function () {
+            $(".containerLoader").fadeOut("slow");
+        });
+    </script>
 </body>
 
 </html>

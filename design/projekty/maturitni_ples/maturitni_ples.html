@@ -24,10 +24,6 @@
     <!--JQuery JavaScript -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!--Masonry a imagesLoaded JavaScript -->
-    <script src="/imagesLoaded.js"></script>
-    <script src="/masonry.js"></script>
-    <script defer src="/init_masonry.js"></script>
     <link rel="icon" href="../../../images/favicon/favicon.ico">
     <!--dark / light mode-->
     <script defer src="../../../light-dark-theme.js"></script>
@@ -44,10 +40,11 @@
     <title>Maturitní ples</title>
 </head>
 
-<body> <div class="containerLoader bgL">
-    <img alt="loader" src="/images/logo.svg" src-light="/images/logo.svg" src-dark="/images/logo-dm.svg"
-      class="loaderlogo exchangeable" />
-  </div>
+<body>
+    <div class="containerLoader bgL">
+        <img alt="loader" src="/images/logo.svg" src-light="/images/logo.svg" src-dark="/images/logo-dm.svg"
+            class="loaderlogo exchangeable" />
+    </div>
     <div class="container bg">
         <div class="navbar"></div>
         <div id="ContentShort">
@@ -58,7 +55,11 @@
                     <span class="rok bigPageSubheading">2021</span>
                 </div>
                 <div class="textBlock">
-                    <p class="ptext">V&nbsp;návrhu jsem&nbsp;se&nbsp;snažila zdůraznit uměleckost školy. Také jsem chtěla, aby bylo na&nbsp;první pohled jasné, že&nbsp;se&nbsp;jedná o&nbsp;ples, aniž&nbsp;by bylo&nbsp;třeba číst text. Využila jsem fotografie tanečníků, kteří inspirovali tančící dům v&nbsp;Praze, Ginger&nbsp;a&nbsp;Freda. Formát plakátu A3&nbsp;(297&nbsp;x&nbsp;420&nbsp;mm), formát&nbsp;vstupenek&nbsp;60&nbsp;x&nbsp;180 mm</p>
+                    <p class="ptext">V&nbsp;návrhu jsem&nbsp;se&nbsp;snažila zdůraznit uměleckost školy. Také jsem
+                        chtěla, aby bylo na&nbsp;první pohled jasné, že&nbsp;se&nbsp;jedná o&nbsp;ples, aniž&nbsp;by
+                        bylo&nbsp;třeba číst text. Využila jsem fotografie tanečníků, kteří inspirovali tančící dům
+                        v&nbsp;Praze, Ginger&nbsp;a&nbsp;Freda. Formát plakátu A3&nbsp;(297&nbsp;x&nbsp;420&nbsp;mm),
+                        formát&nbsp;vstupenek&nbsp;60&nbsp;x&nbsp;180 mm</p>
                 </div>
             </div>
             <div id="Gallery" style="padding: 0 12.5%;">
@@ -80,6 +81,12 @@
         </div>
         <div class="footer"></div>
     </div>
+
+    <!--Masonry a imagesLoaded JavaScript -->
+    <script src="/imagesLoaded.js"></script>
+    <script src="/masonry.js"></script>
+    <script defer src="/init_masonry.js"></script>
+
     <script type="module">
         import PhotoSwipeLightbox from '/PhotoSwipe/dist/photoswipe-lightbox.esm.js';
         const lightbox = new PhotoSwipeLightbox({
@@ -89,11 +96,12 @@
         });
         lightbox.init();
     </script>
-<script>
-    $(window).on("load", function () {
-      $(".containerLoader").fadeOut("slow");
-    });
-  </script>
+
+    <script>
+        $(window).on("load", function () {
+            $(".containerLoader").fadeOut("slow");
+        });
+    </script>
 </body>
 
 </html>

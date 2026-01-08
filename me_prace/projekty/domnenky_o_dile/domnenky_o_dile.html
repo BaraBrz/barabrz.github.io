@@ -24,10 +24,6 @@
     <!--JQuery JavaScript -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!--Masonry a imagesLoaded JavaScript -->
-    <script src="/imagesLoaded.js"></script>
-    <script src="/masonry.js"></script>
-    <script defer src="/init_masonry.js"></script>
     <link rel="icon" href="../../../images/favicon/favicon.ico">
     <!--dark / light mode-->
     <script defer src="../../../light-dark-theme.js"></script>
@@ -44,10 +40,11 @@
     <title>Domněnky o díle</title>
 </head>
 
-<body> <div class="containerLoader bgL">
-    <img alt="loader" src="/images/logo.svg" src-light="/images/logo.svg" src-dark="/images/logo-dm.svg"
-      class="loaderlogo exchangeable" />
-  </div>
+<body>
+    <div class="containerLoader bgL">
+        <img alt="loader" src="/images/logo.svg" src-light="/images/logo.svg" src-dark="/images/logo-dm.svg"
+            class="loaderlogo exchangeable" />
+    </div>
     <div class="container bg">
         <div class="navbar"></div>
         <div id="ContentShort">
@@ -58,11 +55,15 @@
                     <span class="rok bigPageSubheading">2024</span>
                 </div>
                 <div class="textBlock">
-                    <p class="ptext">Jedná se o&nbsp;návrh instalace s&nbsp;figurínou představující Franze Kafku, která&nbsp;je
-                        polepena žlutými poznámkovými lístky. Na&nbsp;nich jsou napsané poznámky toho, co by si Kafka o&nbsp;sobě mohl myslet.
-                        Do&nbsp;díla je zapojen i&nbsp;divák, jelikož má možnost na poznámkový lístek napsat vlastní názor na&nbsp;
-                        Franze Kafku a/nebo&nbsp;jeho tvorbu a&nbsp;nalepit ho na zeď za dílem. 
-                        K&nbsp;využití žlutých poznámkových lístků mě inspirovala žlutá barva, několikrát zmiňovaná v&nbsp;Kafkově díle Popis jednoho zápasu.</p>
+                    <p class="ptext">Jedná se o&nbsp;návrh instalace s&nbsp;figurínou představující Franze Kafku,
+                        která&nbsp;je
+                        polepena žlutými poznámkovými lístky. Na&nbsp;nich jsou napsané poznámky toho, co by si Kafka
+                        o&nbsp;sobě mohl myslet.
+                        Do&nbsp;díla je zapojen i&nbsp;divák, jelikož má možnost na poznámkový lístek napsat vlastní
+                        názor na&nbsp;
+                        Franze Kafku a/nebo&nbsp;jeho tvorbu a&nbsp;nalepit ho na zeď za dílem.
+                        K&nbsp;využití žlutých poznámkových lístků mě inspirovala žlutá barva, několikrát zmiňovaná
+                        v&nbsp;Kafkově díle Popis jednoho zápasu.</p>
                 </div>
             </div>
             <div id="Gallery">
@@ -87,11 +88,11 @@
                             <img src="img/5.webp"></a></div>
 
                     <div class="grid-item"><a href="img/6.webp" data-pswp-width="1300" data-pswp-height="975">
-                            <img src="img/6.webp"></a></div>        
+                            <img src="img/6.webp"></a></div>
 
                     <div class="grid-item"><a href="img/8.webp" data-pswp-width="975" data-pswp-height="1300">
                             <img src="img/8.webp"></a></div>
-                    
+
                     <div class="grid-item"><a href="img/9.webp" data-pswp-width="638" data-pswp-height="1299">
                             <img src="img/9.webp"></a></div>
                 </div>
@@ -99,6 +100,12 @@
         </div>
         <div class="footer"></div>
     </div>
+
+    <!--Masonry a imagesLoaded JavaScript -->
+    <script src="/imagesLoaded.js"></script>
+    <script src="/masonry.js"></script>
+    <script defer src="/init_masonry.js"></script>
+
     <script type="module">
         import PhotoSwipeLightbox from '/PhotoSwipe/dist/photoswipe-lightbox.esm.js';
         const lightbox = new PhotoSwipeLightbox({
@@ -108,11 +115,12 @@
         });
         lightbox.init();
     </script>
-<script>
-    $(window).on("load", function () {
-      $(".containerLoader").fadeOut("slow");
-    });
-  </script>
+
+    <script>
+        $(window).on("load", function () {
+            $(".containerLoader").fadeOut("slow");
+        });
+    </script>
 </body>
 
 </html>

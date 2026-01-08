@@ -6,10 +6,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Bára Brzobohatá">
+
     <!--layout a styl-->
     <link rel="stylesheet" href="/index.css">
     <link rel="stylesheet" href="/../../../bigPage_shorttext_layout.css">
     <link rel="stylesheet" href="/PhotoSwipe/dist/photoswipe.css">
+    <link rel="icon" href="../../../images/favicon/favicon.ico">
     <!-- FONTY: DM Serif Display, League Spartan-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,14 +23,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap" rel="stylesheet">
     <!--GOOGLE FONTY-->
-    <link rel="icon" href="../../../images/favicon/favicon.ico">
     <!--JQuery JavaScript -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!--Masonry a imagesLoaded JavaScript -->
-    <script src="/imagesLoaded.js"></script>
-    <script src="/masonry.js"></script>
-    <script defer src="/init_masonry.js"></script>
+
     <!--dark / light mode-->
     <script defer src="../../../light-dark-theme.js"></script>
     <!--Javascript  -->
@@ -44,10 +42,11 @@
     <title>Komoda</title>
 </head>
 
-<body> <div class="containerLoader bgL">
-    <img alt="loader" src="/images/logo.svg" src-light="/images/logo.svg" src-dark="/images/logo-dm.svg"
-      class="loaderlogo exchangeable" />
-  </div>
+<body>
+    <div class="containerLoader bgL">
+        <img alt="loader" src="/images/logo.svg" src-light="/images/logo.svg" src-dark="/images/logo-dm.svg"
+            class="loaderlogo exchangeable" />
+    </div>
     <div class="container bg">
         <div class="navbar"></div>
         <div id="ContentShort">
@@ -58,7 +57,8 @@
                     <span class="rok bigPageSubheading">2022</span>
                 </div>
                 <div class="textBlock" style="text-align: center">
-                    <p class="ptext">Vizualizace skandinávské&nbsp;komody vlastního&nbsp;návrhu a&nbsp;další tři&nbsp;kusy nábytku navržené ve&nbsp;stejném stylu.</p>
+                    <p class="ptext">Vizualizace skandinávské&nbsp;komody vlastního&nbsp;návrhu a&nbsp;další
+                        tři&nbsp;kusy nábytku navržené ve&nbsp;stejném stylu.</p>
                 </div>
             </div>
             <div id="Gallery">
@@ -75,14 +75,20 @@
 
                     <div class="grid-item"><a href="img/4.webp" data-pswp-width="1300" data-pswp-height="801">
                             <img src="img/4.webp"></a></div>
-                            
+
                     <div class="grid-item"><a href="img/5.webp" data-pswp-width="1300" data-pswp-height="1064">
-                            <img src="img/5.webp"></a></div>        
+                            <img src="img/5.webp"></a></div>
                 </div>
             </div>
         </div>
         <div class="footer"></div>
     </div>
+
+    <!--Masonry a imagesLoaded JavaScript -->
+    <script src="/imagesLoaded.js"></script>
+    <script src="/masonry.js"></script>
+    <script defer src="/init_masonry.js"></script>
+
     <script type="module">
         import PhotoSwipeLightbox from '/PhotoSwipe/dist/photoswipe-lightbox.esm.js';
         const lightbox = new PhotoSwipeLightbox({
@@ -92,11 +98,12 @@
         });
         lightbox.init();
     </script>
-<script>
-    $(window).on("load", function () {
-      $(".containerLoader").fadeOut("slow");
-    });
-  </script>
+
+    <script>
+        $(window).on("load", function () {
+            $(".containerLoader").fadeOut("slow");
+        });
+    </script>
 </body>
 
 </html>

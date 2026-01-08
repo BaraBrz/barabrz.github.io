@@ -25,10 +25,6 @@
     <!--JQuery JavaScript -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!--Masonry a imagesLoaded JavaScript -->
-    <script src="/imagesLoaded.js"></script>
-    <script src="/masonry.js"></script>
-    <script defer src="/init_masonry.js"></script>
     <link rel="icon" href="../../../images/favicon/favicon.ico">
     <!--dark / light mode-->
     <script defer src="../../../light-dark-theme.js"></script>
@@ -45,10 +41,11 @@
     <title>Horizont</title>
 </head>
 
-<body> <div class="containerLoader bgL">
-    <img alt="loader" src="/images/logo.svg" src-light="/images/logo.svg" src-dark="/images/logo-dm.svg"
-      class="loaderlogo exchangeable" />
-  </div>
+<body>
+    <div class="containerLoader bgL">
+        <img alt="loader" src="/images/logo.svg" src-light="/images/logo.svg" src-dark="/images/logo-dm.svg"
+            class="loaderlogo exchangeable" />
+    </div>
     <div class="container bg">
         <div class="navbar"></div>
         <div id="ContentLong">
@@ -70,7 +67,7 @@
                         kolem nás je.<br>
                         Svým dílem jsem na něj chtěla upozornit a&nbsp;to&nbsp;i&nbsp;v&nbsp;noci,
                         kdy by dílo svítilo.<br>
-                        </p>
+                    </p>
                     <div class="twocolumntext">
                         <p class="ptext" style="margin-right: 1em;">materiál:<br>
                             řezané plexisklo pískované<br>
@@ -88,7 +85,8 @@
                             ocelovém kruhu<br>
                             sloužícím jako závaží</p>
                     </div>
-                    <p class="ptext">V&nbsp;rámci návrhu vznikl také funkční&nbsp;model vybrané části v&nbsp;měřítku&nbsp;1:1 z&nbsp;řezaného pískovaného plexiskla.</p>
+                    <p class="ptext">V&nbsp;rámci návrhu vznikl také funkční&nbsp;model vybrané části
+                        v&nbsp;měřítku&nbsp;1:1 z&nbsp;řezaného pískovaného plexiskla.</p>
                 </div>
             </div>
             <div id="Gallery">
@@ -104,7 +102,7 @@
                             <img src="img/3.webp"></a></div>
 
                     <div class="grid-item border"><a href="img/9.webp" data-pswp-width="2119" data-pswp-height="3000">
-                            <img src="img/9.webp"></a></div>        
+                            <img src="img/9.webp"></a></div>
 
                     <div class="grid-item"><a href="img/4.webp" data-pswp-width="3500" data-pswp-height="660">
                             <img src="img/4.webp"></a></div>
@@ -123,6 +121,12 @@
         </div>
         <div class="footer"></div>
     </div>
+
+    <!--Masonry a imagesLoaded JavaScript -->
+    <script src="/imagesLoaded.js"></script>
+    <script src="/masonry.js"></script>
+    <script defer src="/init_masonry.js"></script>
+
     <script type="module">
         import PhotoSwipeLightbox from '/PhotoSwipe/dist/photoswipe-lightbox.esm.js';
         const lightbox = new PhotoSwipeLightbox({
@@ -132,11 +136,12 @@
         });
         lightbox.init();
     </script>
-<script>
-    $(window).on("load", function () {
-      $(".containerLoader").fadeOut("slow");
-    });
-  </script>
+
+    <script>
+        $(window).on("load", function () {
+            $(".containerLoader").fadeOut("slow");
+        });
+    </script>
 </body>
 
 </html>

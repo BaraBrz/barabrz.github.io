@@ -26,10 +26,6 @@
     <!--JQuery JavaScript -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!--Masonry a imagesLoaded JavaScript -->
-    <script src="/imagesLoaded.js"></script>
-    <script src="/masonry.js"></script>
-    <script defer src="/init_masonry.js"></script>
     <!--dark / light mode-->
     <script defer src="../../../light-dark-theme.js"></script>
     <!--Javascript  -->
@@ -45,10 +41,11 @@
     <title>Mně známá krajina</title>
 </head>
 
-<body> <div class="containerLoader bgL">
-    <img alt="loader" src="/images/logo.svg" src-light="/images/logo.svg" src-dark="/images/logo-dm.svg"
-      class="loaderlogo exchangeable" />
-  </div>
+<body>
+    <div class="containerLoader bgL">
+        <img alt="loader" src="/images/logo.svg" src-light="/images/logo.svg" src-dark="/images/logo-dm.svg"
+            class="loaderlogo exchangeable" />
+    </div>
     <div class="container bg">
         <div class="navbar"></div>
         <div id="ContentShort">
@@ -59,8 +56,10 @@
                     <span class="rok bigPageSubheading">2024</span>
                 </div>
                 <div class="textBlock" style="text-align: center;">
-                    <p class="ptext">Na&nbsp;téma mně&nbsp;známá krajina jsem&nbsp;si vybrala své&nbsp;rodné město&nbsp;Náchod. Složila jsem
-                        báseň, která odráží mé&nbsp;pocity, když&nbsp;jsem&nbsp;se dívala na&nbsp;město ze&nbsp;zámeckého kopce. Báseň je
+                    <p class="ptext">Na&nbsp;téma mně&nbsp;známá krajina jsem&nbsp;si vybrala své&nbsp;rodné
+                        město&nbsp;Náchod. Složila jsem
+                        báseň, která odráží mé&nbsp;pocity, když&nbsp;jsem&nbsp;se dívala na&nbsp;město
+                        ze&nbsp;zámeckého kopce. Báseň je
                         doplněná ilustrací ze&nbsp;stejného místa, kreslenou tuší
                         na&nbsp;formát&nbsp;A4&nbsp;(210&nbsp;x&nbsp;297&nbsp;mm).</p>
                 </div>
@@ -75,6 +74,12 @@
         </div>
         <div class="footer"></div>
     </div>
+
+    <!--Masonry a imagesLoaded JavaScript -->
+    <script src="/imagesLoaded.js"></script>
+    <script src="/masonry.js"></script>
+    <script defer src="/init_masonry.js"></script>
+
     <script type="module">
         import PhotoSwipeLightbox from '/PhotoSwipe/dist/photoswipe-lightbox.esm.js';
         const lightbox = new PhotoSwipeLightbox({
@@ -84,11 +89,12 @@
         });
         lightbox.init();
     </script>
-<script>
-    $(window).on("load", function () {
-      $(".containerLoader").fadeOut("slow");
-    });
-  </script>
+
+    <script>
+        $(window).on("load", function () {
+            $(".containerLoader").fadeOut("slow");
+        });
+    </script>
 </body>
 
 </html>

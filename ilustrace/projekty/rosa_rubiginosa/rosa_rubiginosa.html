@@ -26,10 +26,6 @@
     <!--JQuery JavaScript -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!--Masonry a imagesLoaded JavaScript -->
-    <script src="/imagesLoaded.js"></script>
-    <script src="/masonry.js"></script>
-    <script defer src="/init_masonry.js"></script>
     <!--dark / light mode-->
     <script defer src="../../../light-dark-theme.js"></script>
 
@@ -46,10 +42,11 @@
     <title>Rosa Rubiginosa</title>
 </head>
 
-<body> <div class="containerLoader bgL">
-    <img alt="loader" src="/images/logo.svg" src-light="/images/logo.svg" src-dark="/images/logo-dm.svg"
-      class="loaderlogo exchangeable" />
-  </div>
+<body>
+    <div class="containerLoader bgL">
+        <img alt="loader" src="/images/logo.svg" src-light="/images/logo.svg" src-dark="/images/logo-dm.svg"
+            class="loaderlogo exchangeable" />
+    </div>
     <div class="container bg">
         <div class="navbar"></div>
         <div id="ContentShort">
@@ -60,7 +57,8 @@
                     <span class="rok bigPageSubheading">2020</span>
                 </div>
                 <div class="textBlock" style="text-align: center;">
-                    <p class="ptext">Kresba tužkou a vodovými barvami ve formátu 345&nbsp;mm&nbsp;x&nbsp;300&nbsp;mm.</p>
+                    <p class="ptext">Kresba tužkou a vodovými barvami ve formátu 345&nbsp;mm&nbsp;x&nbsp;300&nbsp;mm.
+                    </p>
                 </div>
             </div>
             <div id="Gallery" style="display: flex; justify-content: center;">
@@ -68,7 +66,7 @@
                         <img src="img/1.webp"></a></div>
 
                 <div class="grid-item"><a href="img/2.webp" data-pswp-width="1300" data-pswp-height="1366">
-                        <img src="img/2.webp"></a></div>        
+                        <img src="img/2.webp"></a></div>
 
                 <div class="grid-item"><a href="img/3.webp" data-pswp-width="1101" data-pswp-height="1300">
                         <img src="img/3.webp"></a></div>
@@ -79,6 +77,12 @@
         </div>
         <div class="footer"></div>
     </div>
+
+    <!--Masonry a imagesLoaded JavaScript -->
+    <script src="/imagesLoaded.js"></script>
+    <script src="/masonry.js"></script>
+    <script defer src="/init_masonry.js"></script>
+
     <script type="module">
         import PhotoSwipeLightbox from '/PhotoSwipe/dist/photoswipe-lightbox.esm.js';
         const lightbox = new PhotoSwipeLightbox({
@@ -88,11 +92,12 @@
         });
         lightbox.init();
     </script>
-<script>
-    $(window).on("load", function () {
-      $(".containerLoader").fadeOut("slow");
-    });
-  </script>
+    
+    <script>
+        $(window).on("load", function () {
+            $(".containerLoader").fadeOut("slow");
+        });
+    </script>
 </body>
 
 </html>

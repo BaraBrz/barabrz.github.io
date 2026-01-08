@@ -2,53 +2,49 @@
 <html lang="cs">
 
 <head>
-    <!--čeština-->
-    <meta charset="UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Bára Brzobohatá">
-
-    <!-- FONTY: DM Serif Display, League Spartan-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
-    <!-- FONT: Send Flowers -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap" rel="stylesheet">
+  <!--čeština-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Bára Brzobohatá">
+  <!--layout a styl-->
+  <link rel="stylesheet" href="/404_not_found.css">
+  <link rel="stylesheet" href="/index.css">
+  <link rel="icon" href="../images/favicon/favicon.ico">
+  <!-- FONTY: DM Serif Display, League Spartan-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=League+Spartan:wght@100..900&display=swap"
+    rel="stylesheet">
+  <!-- FONT: Send Flowers -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap" rel="stylesheet">
   <!--GOOGLE FONTY-->
-    <!--GOOGLE FONTY-->
 
-    <!--JQuery JavaScript -->
-    <script
-			  src="https://code.jquery.com/jquery-3.7.1.min.js"
-			  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-			  crossorigin="anonymous"></script> 
+  <!--JQuery JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-    <!--layout a styl-->
-    <link rel="stylesheet" href="/404_not_found.css">
-    <link rel="stylesheet" href="/index.css">
+  <title>Bára Brzobohatá</title>
 
-    <title>Bára Brzobohatá</title>
-    <link rel="icon" href="../images/favicon/favicon.ico">
-    
-    
-    <!--dark / light mode-->
-    <script defer src="../light-dark-theme.js"></script>
+  <!--dark / light mode-->
+  <script defer src="../light-dark-theme.js"></script>
 
-    <!--Javascript  -->
-    <script>
-      $(function(){
-        $(".navbar").load("../navbar.html")
-      });
+  <!--Javascript  -->
+  <script>
+    $(function () {
+      $(".navbar").load("../navbar.html")
+    });
 
-      $(function(){
-        $(".footer").load("../footer.html")
-      });
-    </script>
-</head>   
+    $(function () {
+      $(".footer").load("../footer.html")
+    });
+  </script>
+</head>
 
-<body> <div class="containerLoader bgL">
+<body>
+  <div class="containerLoader bgL">
     <img alt="loader" src="/images/logo.svg" src-light="/images/logo.svg" src-dark="/images/logo-dm.svg"
       class="loaderlogo exchangeable" />
   </div>
@@ -57,15 +53,18 @@
     <div id="Content">
       <div class="textCelek">
         <h1 class="error-404-h bigPageHeading">404 Tady nic není!</h1>
-        <p class="error-404-p ptext">Stránka, kterou hledáte nebyla nalezena.<br>Možná byla přesunuta, možná neexistuje. </p>
+        <p class="error-404-p ptext">Stránka, kterou hledáte nebyla nalezena.<br>Možná byla přesunuta, možná neexistuje.
+        </p>
         <a class="bigPageSubheadingAlt" href="/"><span>Vrať mě zpět...</span></a>
-        <img src="/images/404_fishman-lm.webp" src-light="/images/404_fishman-lm.webp" src-dark="/images/404_fishman-dm.webp" alt="Fishman" class="fishman exchangeable">
-      </div>  
+        <img src="/images/404_fishman-lm.webp" src-light="/images/404_fishman-lm.webp"
+          src-dark="/images/404_fishman-dm.webp" alt="Fishman" class="fishman exchangeable">
+      </div>
     </div>
 
     <div class="footer"></div>
-  </div>  
-<script>
+  </div>
+  
+  <script>
     $(window).on("load", function () {
       $(".containerLoader").fadeOut("slow");
     });
@@ -73,4 +72,3 @@
 </body>
 
 </html>
-

@@ -19,10 +19,6 @@
   <!--JQuery JavaScript -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <!--Masonry a imagesLoaded JavaScript -->
-  <script src="/imagesLoaded.js"></script>
-  <script src="/masonry.js"></script>
-  <script defer src="/init_masonry.js"></script>
   <title>Ilustrace</title>
   <link rel="icon" href="../images/favicon/favicon.ico">
   <!--dark / light mode-->
@@ -276,7 +272,13 @@
 
     <div class="footer"></div>
   </div>
-<script>
+  
+  <!--Masonry a imagesLoaded JavaScript -->
+  <script src="/imagesLoaded.js"></script>
+  <script src="/masonry.js"></script>
+  <script defer src="/init_masonry.js"></script>
+
+  <script>
     $(window).on("load", function () {
       $(".containerLoader").fadeOut("slow");
     });

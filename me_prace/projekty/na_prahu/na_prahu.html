@@ -24,10 +24,6 @@
     <!--JQuery JavaScript -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!--Masonry a imagesLoaded JavaScript -->
-    <script src="/imagesLoaded.js"></script>
-    <script src="/masonry.js"></script>
-    <script defer src="/init_masonry.js"></script>
     <link rel="icon" href="../../../images/favicon/favicon.ico">
     <!--dark / light mode-->
     <script defer src="../../../light-dark-theme.js"></script>
@@ -44,10 +40,11 @@
     <title>Na prahu</title>
 </head>
 
-<body> <div class="containerLoader bgL">
-    <img alt="loader" src="/images/logo.svg" src-light="/images/logo.svg" src-dark="/images/logo-dm.svg"
-      class="loaderlogo exchangeable" />
-  </div>
+<body>
+    <div class="containerLoader bgL">
+        <img alt="loader" src="/images/logo.svg" src-light="/images/logo.svg" src-dark="/images/logo-dm.svg"
+            class="loaderlogo exchangeable" />
+    </div>
     <div class="container bg">
         <div class="navbar"></div>
         <div id="ContentShort">
@@ -69,12 +66,14 @@
                         skrývající se
                         za ním.
                         Ten&nbsp;je nám neznámý až do chvíle, kdy dveře otevřeme.
-                        Rituály&nbsp;přechodu z&nbsp;jedné fáze života do druhé jsou v&nbsp;mnoha kulturách symbolizovány
+                        Rituály&nbsp;přechodu z&nbsp;jedné fáze života do druhé jsou v&nbsp;mnoha kulturách
+                        symbolizovány
                         průchodem
                         branou. Často&nbsp;také symbolizuje přechod mezi životem a&nbsp;smrtí.
                         Ve&nbsp;slovních obratech se "na&nbsp;prahu" přikládá velký symbolický význam
                         např.&nbsp;na&nbsp;prahu vědomí, na&nbsp;prahu dospělosti.<br><br>
-                        Realizované&nbsp;dílo v&nbsp;podobě vypůjčených dveří z&nbsp;přilehlé sokolovny TJ&nbsp;Sokol, se&nbsp;kterou probíhala spolupráce,
+                        Realizované&nbsp;dílo v&nbsp;podobě vypůjčených dveří z&nbsp;přilehlé sokolovny TJ&nbsp;Sokol,
+                        se&nbsp;kterou probíhala spolupráce,
                         bylo mezi dva stromy v&nbsp;sadech dočasně instalováno.</p>
                 </div>
             </div>
@@ -104,7 +103,7 @@
                             <img src="img/2.webp"></a></div>
 
                     <div class="grid-item"><a href="img/10.webp" data-pswp-width="564" data-pswp-height="1000">
-                            <img src="img/10.webp"></a></div>    
+                            <img src="img/10.webp"></a></div>
 
                     <div class="grid-item"><a href="img/9.webp" data-pswp-width="564" data-pswp-height="1000">
                             <img src="img/9.webp"></a></div>
@@ -117,6 +116,12 @@
         </div>
         <div class="footer"></div>
     </div>
+
+    <!--Masonry a imagesLoaded JavaScript -->
+    <script src="/imagesLoaded.js"></script>
+    <script src="/masonry.js"></script>
+    <script defer src="/init_masonry.js"></script>
+
     <script type="module">
         import PhotoSwipeLightbox from '/PhotoSwipe/dist/photoswipe-lightbox.esm.js';
         const lightbox = new PhotoSwipeLightbox({
@@ -126,11 +131,12 @@
         });
         lightbox.init();
     </script>
-<script>
-    $(window).on("load", function () {
-      $(".containerLoader").fadeOut("slow");
-    });
-  </script>
+
+    <script>
+        $(window).on("load", function () {
+            $(".containerLoader").fadeOut("slow");
+        });
+    </script>
 </body>
 
 </html>
