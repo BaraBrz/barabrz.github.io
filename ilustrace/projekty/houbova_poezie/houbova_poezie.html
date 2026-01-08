@@ -45,7 +45,10 @@
     <title>Houbová poezie</title>
 </head>
 
-<body>
+<body> <div class="containerLoader bgL">
+    <img alt="loader" src="/images/logo.svg" src-light="/images/logo.svg" src-dark="/images/logo-dm.svg"
+      class="loaderlogo exchangeable" />
+  </div>
     <div class="container bg">
         <div class="navbar"></div>
         <div id="ContentShort">
@@ -79,6 +82,11 @@
         });
         lightbox.init();
     </script>
+<script>
+    $(window).on("load", function () {
+      $(".containerLoader").fadeOut("slow");
+    });
+  </script>
 </body>
 
 </html>

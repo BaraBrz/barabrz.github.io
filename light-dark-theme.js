@@ -4,6 +4,8 @@
     window.__lightDarkThemeInitialized = true;
 
     const savedTheme = localStorage.getItem("theme");
+    // select elements that should receive the transition class: regular pages (".bg")
+    const bgr = document.querySelectorAll(".bg");
 
     // Track which elements originally had the `border` class so we only
     // restore it for those elements when returning to light mode.
@@ -64,13 +66,21 @@
     function setDarkMode() {
         document.body.setAttribute("theme", "dark");
         localStorage.setItem("theme", "dark");
+        bgr.forEach((el) => el.classList.add("change"));
         applyTheme();
+        setTimeout(() => {
+            bgr.forEach((el) => el.classList.remove("change"));
+        }, 500); // matches the 0.5s transition in CSS
     }
 
     function setLightMode() {
         document.body.removeAttribute("theme");
         localStorage.setItem("theme", "light");
+        bgr.forEach((el) => el.classList.add("change"));
         applyTheme();
+        setTimeout(() => {
+            bgr.forEach((el) => el.classList.remove("change"));
+        }, 500); // matches the 0.5s transition in CSS
     }
 
     // Watch for elements added after initial load (e.g. loaded via AJAX)

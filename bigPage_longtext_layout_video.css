@@ -2,11 +2,7 @@
   --gallery-gap-size: 0.625em;
 }
 
-.html,
-.body {
-  margin: 0;
-  padding: 0;
-}
+
 
 #ContentLong {
   min-height: 100%;

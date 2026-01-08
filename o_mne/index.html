@@ -40,15 +40,21 @@
 </head>
 
 <body>
+  <div class="containerLoader bgL">
+    <img alt="loader" src="/images/logo.svg" src-light="/images/logo.svg" src-dark="/images/logo-dm.svg"
+      class="loaderlogo exchangeable" />
+  </div>
   <div class="container bg">
     <div class="navbar"></div>
-    <div id="Content">
+    <div id="ContentMe">
       <div class="textHalfFrame">
         <div class="textBlock">
           <p class="ptext">Jsem studentka oboru Výtvarné umění - Tvorba ve veřejném prostoru na Technické univerzitě
-            v&nbsp;Liberci a&nbsp;v&nbsp;rámci oboru navrhuji především site-specific díla. Ráda pracuji také s&nbsp;digitálními médii, kde mě
-            baví vytvářet pohyblivá nebo interaktivní díla. Na střední uměleckoprůmyslové škole jsem vystudovala Design interiéru.
-            Ve svém volném čase se zajímám o&nbsp;japonskou pop-kulturu, ilustraci 
+            v&nbsp;Liberci a&nbsp;v&nbsp;rámci oboru navrhuji především site-specific díla. Ráda pracuji také
+            s&nbsp;digitálními médii, kde mě
+            baví vytvářet pohyblivá nebo interaktivní díla. Na střední uměleckoprůmyslové škole jsem vystudovala Design
+            interiéru.
+            Ve svém volném čase se zajímám o&nbsp;japonskou pop-kulturu, ilustraci
             a&nbsp;okrajově také o&nbsp;grafický design. </p>
         </div>
         <div class="kontaktBlock">
@@ -64,6 +70,11 @@
     </div>
     <div class="footer"></div>
   </div>
+  <script>
+    $(window).on("load", function () {
+      $(".containerLoader").fadeOut("slow");
+    });
+  </script>
 </body>
 
 </html>

@@ -1,6 +1,19 @@
+html,
 body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-background);
+}
+
+.body {
   font-size: 16px;
   /* mobil font-size: 14px;*/
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.body[data-theme-ready] {
+  opacity: 1;
 }
 
 /* GOOGLE FONTY */
@@ -69,6 +82,67 @@ body {
   --color-fullscreenoverlay: rgba(0, 0, 0);
 }
 
+/* loader */
+.bgL {
+  background-color: var(--color-fullscreenoverlay);
+  transition: all 0.5s ease-in-out;
+}
+
+.containerLoader {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  position: fixed;
+  z-index: 10000;
+}
+
+.loaderlogo {
+  position: absolute;
+  width: 5em;
+  height: 5em;
+  align-self: center;
+  animation: enter 0.5s ease-in forwards, spin 1.4s ease-out 0.55s infinite forwards;
+  z-index: 10000;
+}
+
+@keyframes enter {
+  0% {
+    scale: 0;
+  }
+
+  75% {
+    scale: 0.9;
+  }
+
+  100% {
+    scale: 0.99;
+  }
+}
+
+@keyframes spin {
+  0% {
+    scale: 1;
+    transform: rotate(5deg);
+  }
+
+  100% {
+
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .loader {
+    width: 3.75em;
+    height: 3.75em;
+  }
+}
+
 /* links */
 #Jmeno:hover>* {
   color: var(--color-text);
@@ -126,6 +200,9 @@ img {
 /* regular stuff */
 .bg {
   background-color: var(--color-background);
+}
+
+.change {
   transition: all 0.5s ease-in-out;
 }
 
@@ -338,7 +415,7 @@ img {
   }
 
   .bigPageSubheadingAlt {
-    font-size: 19px;
+    font-size: 23px;
     font-style: normal;
     font-family: Send Flowers;
     font-weight: 400;
@@ -374,7 +451,7 @@ img {
   .border {
     border-width: 1px;
   }
-  
+
 }
 
 @media screen and (max-width: 500px) {
